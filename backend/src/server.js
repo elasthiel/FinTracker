@@ -13,7 +13,7 @@ app.use(
   cors({
     origin:
       process.env.NODE_ENV === "production"
-        ? "https://fintracker-production-4a96.up.railway.app"
+        ? "https://fintracker-ph.vercel.app"
         : "http://localhost:5173",
     credentials: true,
   }),
