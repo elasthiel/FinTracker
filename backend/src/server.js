@@ -12,7 +12,7 @@ const PORT = process.env.PORT;
 app.use(
   cors({
     origin:
-      process.env.MODE === "production"
+      process.env.NODE_ENV === "production"
         ? "https://fintracker-production-4a96.up.railway.app"
         : "http://localhost:5173",
     credentials: true,
